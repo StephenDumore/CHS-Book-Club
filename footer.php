@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +11,6 @@
             font-family: "Open Sans", sans-serif;
             padding: 1em;
         }
-
         button {
             background-color: rgba(0, 0, 0, 0);
             border: .15em solid #606060;
@@ -30,11 +30,9 @@
             transition: ease .5s;
             cursor: pointer;
         }
-
         button:hover {
             color: #161616;
         }
-
         .line {
             border-color: #606060;
             border-style: solid;
@@ -43,23 +41,19 @@
             border-radius: 10px;
             margin: 2em;
         }
-
         .footer-bottom {
             display: flex;
             position: relative;
         }
-
         .footer-info {
             width: 60%
         }
-
         .footer-info p {
             color: #161616;
             margin-bottom: .5em;
             margin-top: .5em;
             font-size: 1.1em;
         }
-
         .footer-icons {
             display: flex;
             position: relative;
@@ -67,18 +61,15 @@
             bottom: 0;
             right: 0;
         }
-
         .footer-icons a i {
             color: #606060;
             margin: .5em;
             font-size: 1.3em;
             transition: .45s ease;
         }
-
         .footer-icons a i:hover {
             color: #161616;
         }
-
     </style>
 </head>
 <footer>
@@ -105,3 +96,4 @@
 </script>
 
 </html>
+
