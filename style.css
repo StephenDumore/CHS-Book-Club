@@ -294,9 +294,38 @@ About Us*/
 }
 
 /*Close button*/
-.fas fa-times {
+.closeButton {
     font-size: 3em;
     color: #fafafa;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s ease;
+}
+
+.closeButton:hover {
+    color: #a0a0a0;
+    cursor: pointer;
+}
+
+.prev {
+    font-size: 2em;
+    color: #fafafa;
+    display: none;
+    position: absolute;
+    left: 0;
+    transition: .3s ease;
+}
+
+.next {
+    font-size: 2em;
+    color: #fafafa;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .3s ease;
 }
 
 .lightbox-displayed {

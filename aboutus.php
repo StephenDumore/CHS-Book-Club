@@ -38,7 +38,10 @@
     </div>
 
     <div id="lightboxDisplayed" class="lightbox-displayed">
-        <i id="closeButton" class="fas fa-times" onclick="close()"></i>
+        <span class="closeButton" id="closeButton" onclick="closeThing()">X</span>
+        <a class="prev" onclick="nextSlide(-1)">i</a>
+        <a class="next" onclick="nextSlide(1)">i</a>
+        
         <div class="lightbox-img-d"><img class="img-min-width" src="img/turtles.jpg" alt="A copy of John Green's novel, Turtles all the way down"></div>
         <div class="lightbox-img-d"><img class="img-min-width" src="img/group.jpg" alt="The CHS book club working on posters"></div>
         <div class="lightbox-img-d"><img class="img-min-width" src="img/classroom.jpg" alt="The CHS book club's classroom"></div>
@@ -56,16 +59,18 @@
     <script>
         function display() {
             document.getElementById("lightboxDisplayed").style.display = "block";
+            document.getElementById("closeButton").style.display = "block";
         }
 
-        function close() {
+        function closeThing() {
+            console.log('debug');
             document.getElementById("lightboxDisplayed").style.display = "none";
         }
 
         var indexSlides = 1;
         openSlide(indexSlides);
 
-        function next(n) {
+        function nextSlide(n) {
             openSlide(indexSlides += n);
         }
 
@@ -75,12 +80,12 @@
 
         function openSlide(n) {
             var i;
-            var slides = document.getElementByClassName("lightbox-img-d");
+            var slides = document.getElementsByClassName("lightbox-img-d");
             if (n > slides.length) {indexSlides = 1}
             if (n < 1) {indexSlides = slides.length;}
             
-            for (i = 0; i < slides.length; i ++) {
-                slides[i].style.display = "none";
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display ="none";
             }
             slides[indexSlides - 1].style.display = "block";
         }
