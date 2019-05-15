@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="lightbox">
-        <h2 class="lightbox-title">Click an image to enlarge</h2>
+        <h2 class="lightbox-title">Click an image to enlarge.</h2>
         <div class="lightbox-imgs">
             <div class="lightbox-img">
                 <div class="fade" ></div>
@@ -69,23 +69,18 @@
             document.getElementById("lightboxDisplayed").style.display = "block";
             document.getElementById("closeButton").style.display = "block";
         }
-
         function closeThing() {
             console.log('debug');
             document.getElementById("lightboxDisplayed").style.display = "none";
         }
-
         var indexSlides = 1;
         openSlide(indexSlides);
-
         function nextSlide(n) {
             openSlide(indexSlides += n);
         }
-
         function currentSlide(n) {
             openSlide(indexSlides = n);
         }
-
         function openSlide(n) {
             var i;
             var slides = document.getElementsByClassName("lightbox-img-d");
@@ -95,13 +90,11 @@
             if (n < 1) {
                 indexSlides = slides.length;
             }
-
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             slides[indexSlides - 1].style.display = "block";
         }
-
     </script>
 </body>
 

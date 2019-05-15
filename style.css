@@ -450,3 +450,87 @@ About Us*/
 .contact-btn border:hover {
     color: #161616;
 }
+
+/**************************************************
+Contact form*/
+.contact-parallax {
+    background-image: url(img/contact-para.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 1.2em;
+    padding-top: 2.3em;
+    padding-bottom: .5em;
+    margin-top: 0px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: lighter;
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: .1em .1em .04em rgb(0, 0, 0, .6);
+    letter-spacing: .05em;
+}
+
+.form-content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    padding-bottom: 3em;
+}
+
+.contact-msg {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.CHS {
+    margin-bottom: 4em;    
+}
+
+.CHS h3, p {
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: .5em;
+}
+
+.form-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-name > input {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    padding-left: .5em;
+    border-radius: 4px;
+    border-color: #e5e5e5;
+    border-width: 1px;
+    width: 50%;
+    font-size: 1em;
+}
+
+.name {
+    margin-right: 1em;
+}
+
+.email {
+    margin-left: 1em;
+}
+
+textarea {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 1000px
+}
