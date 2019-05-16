@@ -14,7 +14,6 @@ body {
 
 .home-parallax {
     background-image: url(img/home-parallax.jpg);
-    min-height: 100%;
     background-position: center;
     background-attachment: fixed;
     background-attachment: fixed;
@@ -65,6 +64,7 @@ body {
 
 .title-btn:hover {
     color: #9b9b9b;
+    border-color: #9b9b9b;
 }
 
 .title {
@@ -86,6 +86,7 @@ body {
     padding-right: 1em;
     color: #161616;
     margin-bottom: 0px;
+    line-height: 1.5em;
 }
 
 .mission {
@@ -238,7 +239,7 @@ body {
 
 /****************************************************************
 About Us*/
-
+/*
 .title-aboutus {
     width: 100%;
     display: inline-block;
@@ -249,16 +250,19 @@ About Us*/
     min-width: 100%;
     max-width: 100%;
 }
-
+*/
 .main-title {
-    position: absolute;
-    z-index: 999;
-    text-align: center;
-    padding-top: 1.5em;
-    margin-top: 0px;
+    background-image: url(img/about-us-title.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: .6em;
+    padding-top: 1.75em;
+    padding-bottom: .75em;
+    margin: 0px;
     font-family: "Libre Baskerville", serif;
     font-weight: 200;
-    font-size: 4.5em;
+    font-size: 5.5em;
     color: #ffffff;
     text-shadow: .1em .1em .04em rgb(0, 0, 0, .6);
     letter-spacing: .05em;
@@ -344,7 +348,7 @@ About Us*/
     right: 0;
     transition: .3s ease;
     margin-top: 4%;
-    margin-right: 25%;
+    margin-right: 23%;
 }
 
 .closeButton:hover {
@@ -368,7 +372,7 @@ About Us*/
 }
 
 .next {
-    margin-left: 69%;
+    margin-left: 68%;
     position: absolute;
     font-size: 2em;
     color: #fafafa;
@@ -445,11 +449,9 @@ About Us*/
 
 .contact-btn:hover {
     color: #161616;
+    border-color: #161616;
 }
 
-.contact-btn border:hover {
-    color: #161616;
-}
 
 /**************************************************
 Contact form*/
@@ -464,7 +466,7 @@ Contact form*/
     padding-bottom: .5em;
     margin-top: 0px;
     font-family: "Libre Baskerville", serif;
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 3em;
     color: #ffffff;
     text-shadow: .1em .1em .04em rgb(0, 0, 0, .6);
@@ -476,6 +478,7 @@ Contact form*/
     margin-left: auto;
     margin-right: auto;
     font-family: "Open Sans", sans-serif;
+    margin-bottom: 10em;
 }
 
 .form-text-container {
@@ -493,10 +496,11 @@ Contact form*/
 }
 
 .CHS {
-    margin-bottom: 4em;    
+    margin-bottom: 4em;
 }
 
-.CHS h3, p {
+.CHS h3,
+p {
     font-size: 1em;
     margin-bottom: 0px;
     margin-top: .5em;
@@ -514,9 +518,8 @@ Contact form*/
     padding-top: .8em;
     padding-bottom: .8em;
     padding-left: .5em;
+    border: 1px solid #ededed;
     border-radius: 4px;
-    border-color: #e5e5e5;
-    border-width: 1px;
     width: 50%;
     font-size: 1em;
 }
@@ -532,5 +535,236 @@ Contact form*/
 textarea {
     width: 100%;
     font-family: "Open Sans", sans-serif;
-    padding-bottom: 1000px
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    padding-bottom: 6em;
+    margin-bottom: 1em;
+    resize: vertical;
+    
+}
+
+.submit {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding-top: .8em;
+    padding-bottom: .8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #aac2e2;
+    color: #fafafa;
+    transition: .4s ease;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 25%;
+}
+
+.submit:hover {
+    background-color: #91a6c1;
+}
+
+
+/**************************************
+Navbar and footer*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.navbar li {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+}
+
+.navbar a {
+    display: block;
+    color: #161616;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.navbar a:hover {
+    color: #919191;
+}
+
+.navbar-line {
+    border-style: solid;
+    border-color: #91a6c1;
+    border-width: 3px;
+}
+
+
+footer {
+    background-color: #eaeaea;
+    font-family: "Open Sans", sans-serif;
+    padding: 1em;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: .15em solid #606060;
+    font-size: 1.3em;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    letter-spacing: 0.15em;
+    color: #606060;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #161616;
+    border-color: #161616;
+}
+
+.line {
+    border-color: #606060;
+    border-style: solid;
+    border-width: 2px;
+    border-width: 100%;
+    border-radius: 10px;
+    margin: 2em;
+}
+
+.footer-bottom {
+    display: flex;
+    position: relative;
+}
+
+.footer-info {
+    width: 60%
+}
+
+.footer-info p {
+    color: #161616;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    font-size: 1.1em;
+}
+
+.footer-icons {
+    display: flex;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-icons a i {
+    color: #606060;
+    margin: .5em;
+    font-size: 1.3em;
+    transition: .45s ease;
+}
+
+.footer-icons a i:hover {
+    color: #161616;
+}
+
+@media (max-width: 1024px) {
+    .home-title {
+        padding-top: 3em;
+        font-size: 3.8em;
+    }
+    
+    .mission {
+        width: 90%;
+    }
+    
+    .paragraph {
+        font-size: 1.2em;
+        padding-bottom: 1.5em;
+    }
+    
+    .title {
+        font-size: 2.4em;
+        padding-top: 1.5em;
+    }
+    
+    .fade-text {
+        font-size: 2em
+    }
+    .calendar-title {
+        font-size: 2.8em;
+        padding-top: 1.5em;
+    }
+    
+    .calendar {
+        font-size: .8em;
+    }
+    .main-title {
+        font-size: 4.5em;
+    }
+    
+    .about-us-txt1 h2 {
+        padding-top: .25em;
+    }
+    .about-us-txt-li {
+        padding-bottom: .5em;
+        font-size: 1.2em;
+    }
+    
+    .lightbox-title {
+        font-size: 3em;
+    }
+    
+    .lightbox {
+        width: 90%;
+    }
+    
+    .lightbox-imgs > div {
+        margin-left: .25em;
+        margin-right: .25em;
+    }
+    
+    .lightbox-displayed > div {
+        width: 80%;
+        margin-top: 10%;
+    }
+    
+    .prev {
+        margin-top: 45%;
+        margin-left: 13%;
+    }
+    
+    .next {
+        margin-top: 45%;
+        margin-left: 84%;
+    }
+    
+    .closeButton {
+        font-size: 2em;
+        margin-top: 2%;
+        margin-right: 10%
+    }
+    
+    .form-content {
+        width: 70%
+    }
 }

@@ -18,6 +18,8 @@
     <div class="contact-parallax">
         <h1 class="contact-parallax-title">Contact</h1>
     </div>
+    <?php include('templates/navbar.php')  ?>
+
     <div class="form-content">
         <div class="form-text-container">
             <div class="form-text">
@@ -27,8 +29,10 @@
                     <p>1055 Fowler Ave,</p>
                     <p>Clovis, CA 93611</p>
                 </div>
-                <h3 class="">Times</h3>
-                <p>Wednesdays at lunch</p>
+                <div class="CHS">
+                    <h3>Times</h3>
+                    <p>Wednesdays at lunch</p>
+                </div>
             </div>
         </div>
         <form>
@@ -37,9 +41,10 @@
                 <input class="email" type="text" id="fname" name="fname" placeholder="Email...">
             </div>
             <textarea name="msg" id="msg" placeholder="Message..."></textarea>
+            <input class="submit" type="Submit" value="Submit">
         </form>
-
     </div>
+    <?php include('templates/footer.php') ?>
 
 
 </body>
