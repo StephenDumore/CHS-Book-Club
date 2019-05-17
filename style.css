@@ -6,6 +6,7 @@ body {
 .img-min-width {
     min-width: 100%;
     max-width: 100%;
+    display: block;
 }
 
 ::selection {
@@ -152,7 +153,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -163,11 +163,14 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 6em;
     color: #ffffff;
-
 }
 
 .lb-fade-text:hover {
     opacity: 1;
+}
+
+.lb-fade-text p {
+    margin: 0;
 }
 
 .tri-img > div:hover .fade {
@@ -236,20 +239,6 @@ body {
     background-size: cover;
 }
 
-/****************************************************************
-About Us*/
-/*
-.title-aboutus {
-    width: 100%;
-    display: inline-block;
-    position: relative;
-}
-
-.aboutus-title-img {
-    min-width: 100%;
-    max-width: 100%;
-}
-*/
 .main-title {
     background-image: url(img/about-us-title.jpg);
     background-position: center;
@@ -331,6 +320,7 @@ About Us*/
     position: relative;
     min-height: 100%;
     cursor: pointer;
+    display: block;
 }
 
 .lightbox .lightbox-imgs .lightbox-img:hover .fade {
@@ -339,7 +329,7 @@ About Us*/
 
 /*Close button*/
 .closeButton {
-    font-size: 3em;
+    font-size: 2em;
     color: #fafafa;
     display: none;
     position: absolute;
@@ -568,6 +558,12 @@ textarea {
 
 /**************************************
 Navbar and footer*/
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -725,6 +721,7 @@ button:hover {
         font-size: 4.5em;
     }
 
+    /*About us**********/
     .about-us-txt1 h2 {
         padding-top: .25em;
     }
@@ -766,6 +763,11 @@ button:hover {
         font-size: 2em;
         margin-top: 2%;
         margin-right: 10%
+    }
+    
+    /* Form*********/
+    .contact-parallax-title {
+        font-size: 1.5em;
     }
 
     .form-content {
@@ -838,7 +840,7 @@ button:hover {
         margin-left: 0;
         margin-right: 0;
         margin-top: 15em;
-        margin-bottom: 3em;
+
     }
 
     .lightbox-imgs {
@@ -874,6 +876,7 @@ button:hover {
     /*Contact Form***************/
     .contact-parallax {
         background-attachment: scroll;
+        padding-left: .75em;
     }
 
     .contact-parallax-title {
