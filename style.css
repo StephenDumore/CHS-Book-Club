@@ -16,7 +16,6 @@ body {
     background-image: url(img/home-parallax.jpg);
     background-position: center;
     background-attachment: fixed;
-    background-attachment: fixed;
 }
 
 .home-title {
@@ -540,7 +539,7 @@ textarea {
     padding-bottom: 6em;
     margin-bottom: 1em;
     resize: vertical;
-    
+
 }
 
 .submit {
@@ -687,84 +686,210 @@ button:hover {
     color: #161616;
 }
 
+
+
 @media (max-width: 1024px) {
     .home-title {
         padding-top: 3em;
         font-size: 3.8em;
     }
-    
+
     .mission {
         width: 90%;
     }
-    
+
     .paragraph {
         font-size: 1.2em;
         padding-bottom: 1.5em;
     }
-    
+
     .title {
         font-size: 2.4em;
         padding-top: 1.5em;
     }
-    
+
     .fade-text {
         font-size: 2em
     }
+
     .calendar-title {
         font-size: 2.8em;
         padding-top: 1.5em;
     }
-    
+
     .calendar {
         font-size: .8em;
     }
+
     .main-title {
         font-size: 4.5em;
     }
-    
+
     .about-us-txt1 h2 {
         padding-top: .25em;
     }
+
     .about-us-txt-li {
         padding-bottom: .5em;
         font-size: 1.2em;
     }
-    
+
     .lightbox-title {
         font-size: 3em;
     }
-    
+
     .lightbox {
         width: 90%;
     }
-    
+
     .lightbox-imgs > div {
         margin-left: .25em;
         margin-right: .25em;
     }
-    
+
     .lightbox-displayed > div {
         width: 80%;
         margin-top: 10%;
     }
-    
+
     .prev {
         margin-top: 45%;
         margin-left: 13%;
     }
-    
+
     .next {
         margin-top: 45%;
         margin-left: 84%;
     }
-    
+
     .closeButton {
         font-size: 2em;
         margin-top: 2%;
         margin-right: 10%
     }
-    
+
     .form-content {
         width: 70%
     }
+}
+
+@media (max-width: 600px) {
+
+    /*Home****************/
+    .home-parallax {
+        background-attachment: scroll;
+    }
+
+    .home-title {
+        width: 70%;
+        padding-top: 1em;
+    }
+
+    .title-btn {
+        display: none;
+    }
+
+    .mission {
+        width: 100%;
+    }
+
+    .fade-text {
+        font-size: 1.5em;
+    }
+
+    .calendar {
+        flex-direction: column;
+    }
+
+    .calendar > div {
+        width: 100%;
+        font-size: 1.6em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    /*About us********/
+    .ppl-y-txt {
+        flex-direction: column;
+    }
+
+    .ppl-img {
+        width: 100%;
+    }
+
+    .about-us-txt1 {
+        width: 100%;
+        padding-bottom: 2.5em;
+        padding-top: 2em;
+    }
+
+    .about-us-txt1 li {
+        line-height: 2em;
+        font-size: 1.7em;
+    }
+
+    .about-us-txt1 h2 {
+        font-size: 2.5em;
+    }
+
+    .lightbox {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15em;
+        margin-bottom: 3em;
+    }
+
+    .lightbox-imgs {
+        flex-direction: column;
+    }
+
+    .lightbox-imgs > div {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lightbox-title {
+        display: none;
+    }
+
+    .about-us-btm {
+        flex-direction: column;
+    }
+
+    .about-us-btm > div {
+        width: 100%;
+    }
+
+    .contact-btn {
+        margin-bottom: 3em;
+    }
+    
+    .footer-info {
+        font-size: .8em;
+    }
+    
+    
+    /*Contact Form***************/
+    .contact-parallax {
+        background-attachment: scroll;
+    }
+    
+    .contact-parallax-title {
+        padding-bottom: 0em;
+        padding-top: 0em;
+    }
+    
+    .form-name {
+        flex-direction: column;
+    }
+    
+    .form-name input {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0; 
+    }
+    
+
 }
