@@ -549,6 +549,8 @@ textarea {
     position: absolute;
     right: 0;
     margin-right: 25%;
+    font-weight: 600;
+    letter-spacing: .03em;
 }
 
 .submit:hover {
@@ -772,6 +774,10 @@ button:hover {
     .form-content {
         width: 70%
     }
+    
+    .submit {
+        margin-right: 15%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -891,5 +897,9 @@ button:hover {
         width: 100%;
         margin-right: 0;
         margin-left: 0;
+    }
+    
+    .submit {
+        margin-right: 15%;
     }
 }
