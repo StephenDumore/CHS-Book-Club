@@ -865,31 +865,29 @@ button:hover {
     .contact-btn {
         margin-bottom: 3em;
     }
-    
+
     .footer-info {
         font-size: .8em;
     }
-    
-    
+
+
     /*Contact Form***************/
     .contact-parallax {
         background-attachment: scroll;
     }
-    
+
     .contact-parallax-title {
         padding-bottom: 0em;
         padding-top: 0em;
     }
-    
+
     .form-name {
         flex-direction: column;
     }
-    
+
     .form-name input {
         width: 100%;
         margin-right: 0;
-        margin-left: 0; 
+        margin-left: 0;
     }
-    
-
 }
